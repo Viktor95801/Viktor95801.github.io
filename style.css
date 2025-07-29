@@ -1,0 +1,26 @@
+:root {
+    --bg-color: #2B2136;
+    --fg-color: #9F8ED4;
+    --box-bg: #453354;
+    --box-fg: #4d47c6;
+    --box-shadow: #7e6791;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    font-family: monospace, 'Courier New', Courier, Arial;
+    margin: 20px;
+    padding: 10px;
+}
+
+#contents {
+        white-space: pre-wrap;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: var(--box-bg);
+        color: var(--box-fg);
+        border-radius: 10px;
+        margin: 20px;
+        padding: 10px;
+        box-shadow: 0 4px 12px var(--box-shadow);
+}
