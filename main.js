@@ -8,31 +8,25 @@ const file_map = {
     'pt': 'main_page.pt.md'
 }
 
-let main_page = '';
+const getFileContent = async (file_name) => {
+    return await fetch(file_name)
+        .then(response => {
+            if (!response.ok) throw new Error('Network response not ok: ' + response.status);
+            return response.text();
+        })
+        .then(data => {
+            return data;
+        })
+        .catch(error => {
+            throw error;
+        });
+}
+
+let main_page;
 if(file_map[browser_lang] != null) {
-    main_page = await fetch(file_map[browser_lang])
-        .then(response => {
-            if (!response.ok) throw new Error('Network response not ok: ' + response.status);
-            return response.text();
-        })
-        .then(data => {
-            return data;
-        })
-        .catch(error => {
-            throw error;
-        });
+    main_page = await getFileContent(file_map[browser_lang]);
 } else {
-    main_page = await fetch(file_map['en'])
-        .then(response => {
-            if (!response.ok) throw new Error('Network response not ok: ' + response.status);
-            return response.text();
-        })
-        .then(data => {
-            return data;
-        })
-        .catch(error => {
-            throw error;
-        });
+    main_page = await getFileContent(file_map['en']);
 }
 
 content = marked.parse(main_page);
