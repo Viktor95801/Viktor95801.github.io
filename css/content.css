@@ -37,3 +37,30 @@
 #content a:hover {
     color: #f26d52;
 }
+
+#loading span {
+    opacity: 0;
+    animation: loading-blink 0.5s infinite;
+}
+
+#loading span:nth-child(1) {
+    animation-delay: 0s;
+}
+#loading span:nth-child(2) {
+    animation-delay: 0.3s;
+}
+#loading span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes loading-blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
