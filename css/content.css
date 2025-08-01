@@ -1,0 +1,39 @@
+:root {
+    --box-bg: #372247;
+    --box-fg: #ecfad2;
+    --box-shadow: #7e6791;
+    --box-outline: #ecfad2;
+}
+
+#content {
+    width: auto;
+    height: auto;
+    white-space: pre-wrap;
+    font-family: monospace, 'Courier New', Courier, Arial;
+    background-color: var(--box-bg);
+    color: var(--box-fg);
+    border: 5px solid var(--box-outline);
+    border-radius: 10px;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    padding: 20px;
+    box-shadow: 0 4px 12px var(--box-shadow);
+}
+
+#content > * {
+    margin: 0;
+}
+
+#content h1 {
+    color: #CCC;
+}
+
+#content a:link {
+    color: #daf765;
+}
+#content a:visited {
+    color: #c382ce;
+}
+#content a:hover {
+    color: #f26d52;
+}

@@ -1,0 +1,16 @@
+:root {
+    --bg: #2B2136;
+    --fg: #9F8ED4;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--fg);
+    padding-top: calc(2.5em + 5px);
+    margin: 0;
+}
+
+h1 {
+    color: #ddd;
+    margin: 20px;
+}
