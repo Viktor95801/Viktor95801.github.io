@@ -9,17 +9,11 @@ const file_map = {
 }
 
 const getFileContent = async (file_name) => {
-    return await fetch(file_name)
-        .then(response => {
-            if (!response.ok) throw new Error('Network response not ok: ' + response.status);
-            return response.text();
-        })
-        .then(data => {
-            return data;
-        })
-        .catch(error => {
-            throw error;
-        });
+    const response = await fetch(file_name);
+    if(!response.ok) {
+        throw new Error("Response not OK: " + response.status);
+    }
+    return response.text();
 }
 
 let main_page;
