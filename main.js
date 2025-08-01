@@ -42,7 +42,7 @@ Este site é feito para ajudar-me ao aprender e espero que vocês também aprend
 
 Pode encontrar o código fonte [disponível aqui](https://github.com/Viktor95801/viktor95801.github.io).`
 
-// content = marked.parse(main_page);
-content = main_page;
+// const content = marked.parse(main_page);
+const content = main_page;
 document.getElementById('content').innerHTML = content;
 console.log(content);
