@@ -16,7 +16,7 @@
 body {
     background-color: var(--bg-color);
     color: var(--fg-color);
-    padding-top: calc(28px + 3ch);
+    padding-top: calc(2.5em + 5px);
     margin: 0;
 }
 
@@ -34,6 +34,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    line-height: 2.5em;
     
     background-color: var(--tob-bar-bg);
     color: var(--top-bar-fg);
@@ -43,12 +44,6 @@ h1 {
 
     z-index: 1024 !important;
     overflow: hidden !important;
-}
-
-#top-bar.top-bar-left,
-#top-bar.top-bar-right {
-    display: flex;
-    margin: 14px;
 }
 
 #top-bar a {
