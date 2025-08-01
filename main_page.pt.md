@@ -5,7 +5,7 @@ Este site é feito para ajudar-me ao aprender e espero que vocês também aprend
 
 ## O que posso fazer aqui?
 
-1. Bom, este é o hub para interagir com meu blog. [Você pode ver meu blog aqui](/blog/).
+Este é o hub para interagir com meu blog. [Você pode ver meu blog aqui](/blog/).
 
 ## Código fonte!! 💢
 

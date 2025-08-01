@@ -5,7 +5,7 @@ This is made to help me at learning and hopefully you can learn too by looking a
 
 ## What can you do here?
 
-1. Well, first of all, this is the place for interacting with my blog. [You can see my blog here](/blog/).
+Well, this is the place for interacting with my blog. [You can see my blog here](/blog/).
 
 ## Source code, please! 💢
 
