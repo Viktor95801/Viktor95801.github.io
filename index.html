@@ -36,21 +36,26 @@
         <link rel="stylesheet" href="/css/content.css"/>
     </head>
     <body>
-        <div id="top-bar">
-            <div class="top-bar-left">
-                <a href="/" class="top-bar-active-link">
+        <!-- Hamburger button top bar -->
+        <nav id="ham-nav">
+            <input 
+                id="burger"
+                type="checkbox"/>
+            <label for="burger">&#9776;</label>
+            
+            <div id="ham-items">
+                <a href="/">
                     Home
                 </a>
-                <a href="/blog/index.html">
+                <a href="/blog/">
                     Blog
                 </a>
-            </div>
-            <div class="top-bar-right">
                 <a href="https://github.com/Viktor95801/Viktor95801.github.io">
                     Source
                 </a>
             </div>
-        </div>
+        </nav>
+
         <h1>
             Viktor's place
             <sup

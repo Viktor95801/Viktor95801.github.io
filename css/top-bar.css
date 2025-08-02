@@ -7,41 +7,90 @@
     --top-bar-bottom: #7e6791;
 }
 
-#top-bar {
-    position: fixed; 
-    top: 0;
-    left: 0;
+body {
+    padding-top: calc(2.5em + 5px);
+}:root {
+    --nav-ham-bg: blue;
+    --nav-bg: #312936;
+    --nav-fg: #9059b3;
+    --nav-shadow: #7e679188;
+    --nav-active-fg: #9059b3;
+    --nav-active-bg: #29073f;
+    --top-bar-bottom: #7e6791;
+}
+
+
+/* [BIG SCREEN] */
+
+#ham-nav label, #burger {
+    display: none;
+}
+
+#ham-nav {
     width: 100%;
-    
+    background: var(--nav-bg);
+    color: var(--nav-fg);
+    box-shadow: 5px 4px 12px var(--nav-shadow);
+}
+
+#ham-items {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    line-height: 2.5em;
+}
+
+#ham-items a {
+    flex-grow: 1;
+    flex-basis: 0;
     
-    background-color: var(--tob-bar-bg);
-    color: var(--top-bar-fg);
-
-    box-shadow: 0 4px 12px var(--top-bar-shadow);
-    border-bottom: 1px solid var(--top-bar-bottom);
-
-    z-index: 1024 !important;
-    overflow: hidden !important;
-}
-
-#top-bar a {
-    color: var(--tob-bar-fg);
+    font-size: 1.3rem;
+    line-height: 3em;
+    padding: 0 10px;
+    
     text-align: center;
-    padding: 14px 1ch;
     text-decoration: none;
-    font-size: 3ch;
 }
 
-#top-bar a.top-bar-active-link {
-    background-color: var(--top-bar-active-bg);
-    color: var(--top-bar-active-fg)
+#ham-items a:hover {
+    color: var(--nav-bg);
+    background: var(--nav-fg);
 }
 
-#top-bar a:hover {
-    background-color: var(--tob-bar-fg);
-    color: var(--tob-bar-bg);
+#ham-items a.active {
+    color: var(--nav-active-fg);
+    background: var(--nav-active-bg);
+}
+
+/* [SMOL SCREEN] */
+@media screen and (max-width: 798px) {
+    body {
+        padding: 3em 0;
+    }
+    
+    #ham-nav {
+        position: fixed;
+        top: 0;
+    }
+    
+    #ham-items a {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        border-top: 1px solid #000;
+    }
+    
+    #ham-nav label {
+        display: inline-block;
+        color: var(--fg);
+        background: var(--nav-ham-bg);
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    
+    #ham-items {
+        display: none;
+    }
+    
+    #burger:checked ~ #ham-items {
+        display: block;
+    }
 }
