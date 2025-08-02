@@ -15,24 +15,29 @@
         <link rel="stylesheet" href="/css/content.css"/>
     </head>
     <body>
-        <div id="top-bar">
-            <div class="top-bar-left">
-                <a href="/">
-                    Home
-                </a>
-                <a 
-                    href="/blog/index.html"
-                    class="top-bar-active-link"
-                >
-                    Blog
-                </a>
-            </div>
-            <div class="top-bar-right">
-                <a href="https://github.com/Viktor95801/Viktor95801.github.io">
-                    Source
-                </a>
-            </div>
-        </div>
+        <!-- Hamburger button top bar -->
+        <nav id="ham-nav">
+                <input 
+                    id="burger"
+                    type="checkbox"/>
+                <label for="burger">&#9776;</label>
+                
+                <div id="ham-items">
+                    <div> <!-- Left side -->
+                        <a href="/" class="active">
+                            Home
+                        </a>
+                        <a href="/blog/">
+                            Blog
+                        </a>
+                    </div>
+                    <div> <!-- Right side -->
+                        <a href="https://github.com/Viktor95801/Viktor95801.github.io">
+                            Source
+                        </a>
+                    </div>
+                </div>
+        </nav>
         <h1>Blog hub</h1>
         <p>
             Unfortunately, this is a work in progress

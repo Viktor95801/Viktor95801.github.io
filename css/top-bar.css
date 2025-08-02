@@ -1,16 +1,5 @@
 :root {
-    --tob-bar-bg: #312936;
-    --tob-bar-fg: #9059b3;
-    --top-bar-shadow: #7e679188;
-    --top-bar-active-fg: #9059b3;
-    --top-bar-active-bg: #29073f;
-    --top-bar-bottom: #7e6791;
-}
-
-body {
-    padding-top: calc(2.5em + 5px);
-}:root {
-    --nav-ham-bg: blue;
+    --nav-ham-bg: #472b5a;
     --nav-bg: #312936;
     --nav-fg: #9059b3;
     --nav-shadow: #7e679188;
@@ -35,11 +24,13 @@ body {
 
 #ham-items {
     display: flex;
+    justify-content: space-between;
 }
 
 #ham-items a {
     flex-grow: 1;
     flex-basis: 0;
+    display: inline-block;
     
     font-size: 1.3rem;
     line-height: 3em;
@@ -54,13 +45,13 @@ body {
     background: var(--nav-fg);
 }
 
-#ham-items a.active {
+#ham-items a.active:not(:hover) {
     color: var(--nav-active-fg);
     background: var(--nav-active-bg);
 }
 
 /* [SMOL SCREEN] */
-@media screen and (max-width: 798px) {
+@media screen and (max-width: 600px) {
     body {
         padding: 3em 0;
     }
