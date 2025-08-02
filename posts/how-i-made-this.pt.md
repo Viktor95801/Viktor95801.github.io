@@ -1,8 +1,3 @@
-<!--
-    date:"2025/07/29"
-    title:"Como fiz o blog?"
-    description:"Detalhos sobre como fiz o blog.Este post inclui também alguns detalhes técnicos sobre sua implementação."
--->
 
 # Bem vindo
 
@@ -18,3 +13,9 @@ printf("Fantasia\n");
 E é isso
 
 ### E talvez isso
+
+<!--
+    date:"2025/07/29"
+    title:"Como fiz o blog?"
+    description:"Detalhos sobre como fiz o blog.Este post inclui também alguns detalhes técnicos sobre sua implementação."
+-->
