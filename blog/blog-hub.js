@@ -21,7 +21,7 @@ posts.forEach(post => {
     }
     const li = document.createElement('li');
     li.innerHTML = `<h3>
-        <a href="/blog/load-post.html?post=${post['file-name']}">${post.title}</a>
+        <a href="/blog/posts/${post['file-name']+'.html'}">${post.title}</a>
     </h3>
     <p>
         ${post.description}

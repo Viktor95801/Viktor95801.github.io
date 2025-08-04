@@ -1,0 +1,32 @@
+:root {
+    --bli-border: #fffacb;
+    --bli-shadow: #d8b65a59;
+}
+
+#post-list {
+    flex: 1 1 auto;
+
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    
+    border: 3px solid var(--bli-border);
+    border-radius: 5px;
+    
+    box-shadow: 0 4px 12px var(box-shadow);
+    
+    height: 9999999px;
+    max-height: 72vh;
+    
+    overflow-y: auto;
+}
+
+#post-list > li {
+    border: 1px solid var(--bli-border);
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px var(--bli-shadow);
+
+    margin: 10px;
+    padding: 10px;
+}

@@ -8,7 +8,7 @@
 #content {
     width: auto;
     height: auto;
-    white-space: pre-wrap;
+    white-space: pre;
     font-family: monospace, 'Courier New', Courier, Arial;
     background-color: var(--box-bg);
     color: var(--box-fg);

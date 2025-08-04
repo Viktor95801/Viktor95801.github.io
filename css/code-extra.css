@@ -1,0 +1,24 @@
+:root {
+    --code-border: #fffacb;
+    --code-shadow: #d8b65a59;
+}
+
+pre > code {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    box-sizing: border-box;
+    display: block;
+
+    padding: 1em;
+
+    position: relative;
+
+    border: 1px solid var(--code-border);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px var(--code-shadow);
+
+    font-family: monospace, 'Courier New', Courier, Arial;
+    font-size: 1em;
+    line-height: 0.8em;
+}

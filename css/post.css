@@ -1,0 +1,41 @@
+:root {
+    --toc-bg: #372247;
+    --toc-fg: #ecfad2;
+    --toc-shadow: #7e6791;
+    --toc-outline: #ecfad2;
+}
+
+.toc {
+    margin: 0;
+    padding: 0;
+    
+    background: var(--toc-bg);
+    color: var(--toc-fg);
+    box-shadow: 5px 4px 12px var(--toc-shadow);
+    
+    border: 5px solid var(--toc-outline);
+    border-radius: 10px;
+}
+
+.toc ul {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 1em;
+}
+
+:lang(pt) .toc::before {
+    content: "Tópicos";
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    color: #CCC;
+}
+
+:lang(en) .toc::before {
+    content: "ToC (Table of Contents)";
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    color: #CCC;
+}
