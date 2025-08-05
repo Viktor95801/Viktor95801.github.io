@@ -30,3 +30,7 @@
     margin: 10px;
     padding: 10px;
 }
+
+#post-list a {
+    text-decoration: none;
+}
